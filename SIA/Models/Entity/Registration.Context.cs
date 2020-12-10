@@ -13,10 +13,10 @@ namespace SIA.Models.Entity
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Registration : DbContext
+    public partial class RegistrationEntities : DbContext
     {
-        public Registration()
-            : base("name=Registration")
+        public RegistrationEntities()
+            : base("name=RegistrationEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace SIA.Models.Entity
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Registration> Registrations { get; set; }
     }
 }
