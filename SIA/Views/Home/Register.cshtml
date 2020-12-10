@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = null;
+}
+<!-- Sing in  Form -->
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QCU Sign Up</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/Content/material-design-iconic-font.min.css">
+
+    <script src="~/Scripts/custom.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/Content/style.css">
+</head>
+
+<div class="main">
+
+    <div class="container">
+        <form action="/Home/dataTransfer" method="POST" class="appointment-form" id="registrationForm">
+            <h2>Quezon City University</h2>
+            <h3>Sign Up</h3>
+            <div class="form-group-1">
+                <input type="text" name="Firstname" id="Firstname" placeholder="First Name" />
+                <input type="text" name="Middlename" id="Middlename" placeholder="Middle Name" />
+                <input type="text" name="Lastname" id="Lastname" placeholder="Last Name" />
+                <input type="date" name="Birthdate" id="Birthdate" placeholder="MM/DD/YYY" />
+                <input type="text" name="Username" id="Username" placeholder="Username" />
+                <input type="password" name="Password" id="Password" placeholder="Password" />
+                <input type="password" name="Confirmpassword" id="Confirmpassword" placeholder="Confirm Password" />
+            </div>
+
+
+            <div class="form-submit">
+                <input type="submit" name="submit" id="submit" class="submit" value="Sign Up" />
+            </div>
+            <a>@Html.ActionLink("Log in to my account", "Login", "Home")</a>
+        </form>
+    </div>
+
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")

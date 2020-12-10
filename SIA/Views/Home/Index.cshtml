@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+
+
+<div class="container bg-success p-5">
+
+
+    <div class="row mt-5">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+            <div class="card">s
+                <div class="card-header">
+                    <h4 class="text-default text-uppercase text-center">Quezon City University</h4>
+                </div>
+                <div class="card-body">
+                    <h2>Registration Form</h2>
+                    <br>
+                    <form action="/Home/dataTransfer" method="post" id="registrationForm">
+                        <div class="row">
+                            <div class="form-group col-md-4 col-12">
+                                <label for="firstname">First Name </label>
+                                <input class="form-control" id="Firstname" name="Firstname" type="text">
+                            </div>
+                            <div class="form-group col-md-4 col-12">
+                                <label for="midname">Middle Name </label>
+                                <input class="form-control" id="Middlename" name="Middlename" type="text">
+
+                            </div>
+                            <div class="form-group col-md-4 col-12">
+                                <label for="lastname">Last Name </label>
+                                <input class="form-control" id="Lastname" name="Lastname" type="text">
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                                <label for="Cellphone">Birth Date</label>
+                                <input class="form-control case-sensitive" id="Birthdate" name="Birthdate" type="date">
+                            </div>
+                            
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="userName">Student ID: (Ex: 18-0000)</label>
+
+                                <input class="form-control case-sensitive" id="StudentId" name="StudentId" type="text">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="Password">Password:</label>
+                                <input class="form-control case-sensitive" id="Password" name="Password" type="password">
+
+                            </div>
+                            <div class="col-md-4">
+                                <label for="Password">Confirm Password:</label>
+
+                                <input class="form-control case-sensitive" id="Confirmpassword" name="Confirmpassword" type="password">
+
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-center mt-3">
+
+                            <button type="submit" id="registerBtn" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+

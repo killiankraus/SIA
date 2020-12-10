@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>QCU Login</title>
+
+<!-- Font Icon -->
+<link rel="stylesheet" href="~/Content/material-design-iconic-font.min.css">
+<script src="~/Scripts/custom.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+
+
+<!-- Main css -->
+<link rel="stylesheet" href="~/Content/style1.css">
+
+<body class="bd">
+
+    <!-- Sign up form -->
+    <div class="main1">
+
+        <div class="container1">
+            <form method="POST" class="appointment-form" id="loginForm">
+                <center><h2>Quezon City University</h2></center>
+                <h3>Login</h3>
+
+                <div class="form-group-1">
+                    <input type="text" name="Username" id="Username" placeholder="Username" />
+                    <input type="password" name="Password" id="Password" placeholder="Password" />
+                </div>
+
+                <div class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Login" />
+                </div>
+                <a>@Html.ActionLink("Create new account", "Register", "Home")</a>
+            </form>
+        </div>
+
+    </div>
+
+</body>
