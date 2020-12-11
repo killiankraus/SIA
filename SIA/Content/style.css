@@ -128,7 +128,7 @@ h3 {
 body {
   font-size: 18px;
   line-height: 1.8;
-  color: #fff;
+  color: black;
   background-image: url("Images/SB.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -246,7 +246,7 @@ input[type=checkbox]:not(old):checked + label > span:before {
 .submit {
   width: auto;
   background: #4966b1;
-  color: #fff;
+  color: black;
   padding: 16px 17px;
   font-size: 13px;
   border: none;

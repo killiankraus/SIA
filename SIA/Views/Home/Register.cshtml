@@ -6,20 +6,7 @@
 <!-- Sing in  Form -->
 @Styles.Render("~/Content/css")
 @Scripts.Render("~/bundles/modernizr")
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>QCU Sign Up</title>
 
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="~/Content/material-design-iconic-font.min.css">
-
-    <script src="~/Scripts/custom.js"></script>
-    <script src="~/Scripts/jquery.validate.js"></script>
-    <!-- Main css -->
-    <link rel="stylesheet" href="~/Content/style.css">
-</head>
 
 <div class="main">
 
@@ -28,12 +15,31 @@
             <h2>Quezon City University</h2>
             <h3>Sign Up</h3>
             <div class="form-group-1">
+                <label class="col-md-4 control-label">First Name</label>
                 <input type="text" name="Firstname" id="Firstname" placeholder="First Name" />
+
+                <label class="col-md-4 control-label">Middle Name</label>
                 <input type="text" name="Middlename" id="Middlename" placeholder="Middle Name" />
+
+                <label class="col-md-4 control-label">Last Name</label>
                 <input type="text" name="Lastname" id="Lastname" placeholder="Last Name" />
+
+                <label class="col-md-4 control-label">Birthdate</label>
                 <input type="date" name="Birthdate" id="Birthdate" placeholder="MM/DD/YYY" />
+
+                <label class="col-md-4 control-label">Contact No</label>
+                <input id="Contact" name="Contact" placeholder="09__+____+___" class="form-control" onkeyup="numberCheck(this)" type="text" maxlength="11" min="8">
+
+                <label class="col-md-4 control-label">E-Mail</label>
+                <input id="EmailAddress" name="EmailAddress" placeholder="E-Mail Address" class="form-control" type="text">
+
+                <label class="col-md-4 control-label">Username</label>
                 <input type="text" name="Username" id="Username" placeholder="Username" />
+
+                <label class="col-md-4 control-label">Password</label>
                 <input type="password" name="Password" id="Password" placeholder="Password" />
+
+                <label class="col-md-4 control-label">Confirm Password</label>
                 <input type="password" name="Confirmpassword" id="Confirmpassword" placeholder="Confirm Password" />
             </div>
 

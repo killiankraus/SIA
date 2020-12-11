@@ -8,6 +8,7 @@ using SIA.Models.DTO;
 using SIA.Models.Repository;
 using System.Security.Cryptography;
 using System.Text;
+//using SIA.Models.Entity;
 
 
 
@@ -52,38 +53,14 @@ namespace SIA.Controllers
         public ActionResult dataTransfer(RegistrationFormDTO data)
         {
 
-            Account acc = new Account();
+            //RegistrationFormRepository reg = new RegistrationFormRepository();
 
-            acc.Firstname = data.Firstname;
-            acc.Middlename = data.Middlename;
-            acc.Lastname = data.Lastname;
-            acc.Birthdate = data.Birthdate;
-            acc.Username = data.Username;
-            acc.Password = encdec.Encrypt(data.Username, data.Password);
+            //bool inserted = reg.insertTodatabase(data);
 
-            db.Accounts.Add(acc);
-            db.SaveChanges();
-            return View("Login");
+            //return Json(new { success = inserted });
+            return View("Login"); 
 
         }
-
-        public string checkUserName(string Username)
-        {
-
-            var checkStudentId = db.Accounts.Where(s => s.Username == Username).FirstOrDefault();
-            if (checkStudentId != null)
-            {
-                return "false";
-            }
-            return "true";
-        }
-
-        
-
-
-        
-
-        
 
     }
 }

@@ -132,6 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DTO\LoginDTO.cs" />
     <Compile Include="Models\DTO\RegistrationFormDTO.cs" />
     <Compile Include="Models\Entity\Registration.Context.cs">
       <AutoGen>True</AutoGen>
